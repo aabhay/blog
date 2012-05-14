@@ -4,5 +4,5 @@ class Micropost
   field :user_id, :type => Integer
 
   belongs_to :user
-  validates_length_of :content, :within => 1..140
+  validates_length_of :content, :within => 1..140, :message => "please enter something"
 end
